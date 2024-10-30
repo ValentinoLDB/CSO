@@ -14,7 +14,7 @@
 
 for file in *; do
     if [[ -f "$file" ]]; then
-    echo "$file" | tr '[:lower:]' '[:upper:]' | tr -d 'aA'
+    echo "$file" | tr 'a-zA-Z' 'A-Za-z' | tr -d 'aA'
     fi
 done
 
